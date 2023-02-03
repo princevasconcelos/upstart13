@@ -3,7 +3,7 @@ import Home from 'pages/Home';
 
 function Paths() {
   return (
-    <Routes>
+    <Routes location="/">
       <Route path="/" element={<Home />} />
     </Routes>
   );

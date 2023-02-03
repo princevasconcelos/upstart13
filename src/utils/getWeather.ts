@@ -24,8 +24,6 @@ const getGeocodingLocation = async (
     'jsonp'
   );
 
-  console.log('prince geocodingLocationUrl', response)
-
   return response;
 };
 
@@ -36,8 +34,6 @@ const getForecast = async (lat: number, lon: number) => {
     getForecastUrl,
     'normal'
   );
-  console.log('prince getForecast', response)
-
   return response;
 };
 
@@ -85,7 +81,6 @@ export const getWeather = async (
   if (forecast.data?.properties.forecast) {
     const periods = await getPeriod(forecast.data?.properties.forecast);
 
-    console.log('prince getPeriod', periods)
     if (periods.data?.properties.periods.length) {
       return {
         error: false,
