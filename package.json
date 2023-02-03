@@ -10,7 +10,8 @@
     "start": "env-cmd -f .env react-scripts start",
     "eject": "react-scripts eject",
     "build": "react-scripts build",
-    "lint": "react-scripts lint"
+    "lint": "react-scripts lint",
+    "deploy:gh": "npm run build && ./node_modules/.bin/gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
