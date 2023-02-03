@@ -1,6 +1,7 @@
 {
   "name": "upstart13",
   "version": "0.1.0",
+  "homepage": "https://princevasconcelos.github.io/upstart13/",
   "private": true,
   "engines": {
     "node": ">=16.x"
@@ -8,8 +9,8 @@
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
     "eject": "react-scripts eject",
-    "lint": "react-scripts lint",
-    "test": "cypress open"
+    "build": "react-scripts build",
+    "lint": "react-scripts lint"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +57,7 @@
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.5",
     "typescript": "^4.7.4"
